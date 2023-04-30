@@ -1,11 +1,11 @@
-import ControlCSS from "./Components/ControlingCss/ControlCSS";
+import FourImages from "./Components/Day-4/FourImages";
 
 function App() {
   return (
     <>
-      <ControlCSS />
-
-      {/* <Clock /> */}
+      <div className="flex ">
+        <FourImages />
+      </div>
     </>
   );
 }
