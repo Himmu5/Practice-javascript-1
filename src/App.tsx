@@ -1,12 +1,10 @@
-import FourImages from "./Components/Day-4/FourImages";
+import Checkbox from "./Components/Checkbox-Notes/Checkbox";
 
 function App() {
   return (
-    <>
-      <div className="flex ">
-        <FourImages />
-      </div>
-    </>
+    <div className="">
+      <Checkbox />
+    </div>
   );
 }
 

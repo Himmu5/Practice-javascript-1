@@ -8,22 +8,22 @@ type P = {
 const SingleImage: FC<P> = ({ imgUrl, Text }) => {
   let extraClass = "";
   const [select, setSelect] = useState(false);
-  console.log(select);
+
   function selectItem() {
     setSelect(!select);
   }
 
   if(select) {
-    extraClass += " scale-125 ";
+    extraClass = " flex-1  ";
   }
 
   return (
     <div
-      className={"relative flex justify-center items-center " + extraClass}
+      className={"relative flex justify-center items-center duration-300  ease-in transition-all " + extraClass}
       onClick={selectItem}
     >
       <h1 className={"font-bold text-4xl text-white absolute "}>{Text}</h1>
-      <img src={imgUrl} className="h-full" alt="" />
+      <img src={imgUrl} className="h-full object-cover " alt={Text}/>
     </div>
   );
 };
